@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" type="images/x-icon" href="https://www.pixilart.com/images/art/705ba833f935409.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="left">
+                <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" width="200" style="left: 190px;top: 25px;height: 55px;">
+            </div>
+            <div class="right">
+                <select name="language" class="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+                <button><a href="signin.html">Sign In</a></button>
+            </div>
+        </nav>
+        <br><br>
+        <div class="title">
+            <div class="content">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <br>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <br>
+                <form action="#">
+                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div class="email">
+                        <div class="space">
+                        <input type="email" name="email" id="email11">
+                        <label for="floatingInput">Email address</label> 
+                          </div>
+                          <div class="button1">
+                        <button onclick = "movie()" type=""><a href="#">Get Started  ></a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+      function movie(){
+          var x=document.getElementById("email11").value;
+          var y="nilakrishna2004@gmail.com";
+          if(x===y)
+          {
+            location.href="Movie.html";
+          }
+          else
+          {
+            alert("Enter a valid Email Adderess !!!"+x);
+          }
+      }
+      
+    </script>
+</body>
+</html>
